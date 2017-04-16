@@ -1,0 +1,44 @@
+{
+	"name": "silverstripe/installer",
+	"description": "The SilverStripe Framework Installer",
+	"require": {
+		"php": ">=5.5",
+		"silverstripe/asset-admin": "1.0.x-dev",
+		"silverstripe/cms": "4.0.x-dev",
+		"silverstripe/framework": "4.0.x-dev",
+		"silverstripe/reports": "4.0.x-dev",
+		"silverstripe/siteconfig": "4.0.x-dev",
+		"silverstripe-themes/simple": "*",
+		"golonka/bbcodeparser": "^2.2",
+		"firesphere/yubiauth": "dev-ss4",
+		"yubico/u2flib-server": "^1.0",
+		"silverstripe/graphql-devtools": "dev-master",
+		"axyr/silverstripe-ideannotator": "3.x-dev",
+		"roave/security-advisories": "dev-master"
+	},
+	"require-dev": {
+		"codeception/codeception": "^2.0",
+		"friendsofphp/php-cs-fixer": "^2.1",
+		"phpunit/PHPUnit": "~4.8"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "4.0.x-dev"
+		}
+	},
+	"config": {
+		"process-timeout": 600
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "git@github.com:Firesphere/silverstripe-recaptcha.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github.com:Firesphere/silverstripe-spamprotection.git"
+		}
+	],
+	"prefer-stable": true,
+	"minimum-stability": "dev"
+}

@@ -1,0 +1,20 @@
+---
+Name: mysite
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SilverStripe\View\SSViewer:
+  theme: 'simple'
+---
+Only:
+  environment: 'dev'
+---
+SilverStripe\View\SSViewer:
+  source_file_comments: true
+Axyr\IDEAnnotator\DataObjectAnnotator:
+    enabled:
+      true
+    enabled_modules:
+       - mysite
+       - yubiauth
