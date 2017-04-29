@@ -15,6 +15,7 @@
 /cms/
 /campaign-admin/
 /versioned/
+/geshiparser/
 /mysite/_config/recaptcha.yml
 /mysite/_config/token.yml
 # ignore all environment files

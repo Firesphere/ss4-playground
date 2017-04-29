@@ -11,10 +11,12 @@
 		"silverstripe-themes/simple": "*",
 		"golonka/bbcodeparser": "^2.2",
 		"firesphere/yubiauth": "dev-ss4",
+		"firesphere/silverstripe-geshiparser": "dev-master",
 		"yubico/u2flib-server": "^1.0",
 		"silverstripe/graphql-devtools": "dev-master",
 		"axyr/silverstripe-ideannotator": "3.x-dev",
-		"roave/security-advisories": "dev-master"
+		"roave/security-advisories": "dev-master",
+		"php-console/php-console": "^3.1"
 	},
 	"require-dev": {
 		"codeception/codeception": "^2.0",
