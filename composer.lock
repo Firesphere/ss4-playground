@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "190a19a2091528fe6ccc7ce7be11bdad",
+    "content-hash": "81642d295102813e67d28a1bb027e059",
     "packages": [
         {
             "name": "axyr/silverstripe-ideannotator",
@@ -1564,16 +1564,16 @@
         },
         {
             "name": "silverstripe/framework",
-            "version": "dev-master",
+            "version": "dev-authenticator-refactor",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "2284121a91ec6cf927b75bd452e0f538447c064f"
+                "url": "https://github.com/sminnee/silverstripe-framework.git",
+                "reference": "4bd0b3ca75f5f1fc76ef2d0960a1e16eb207b8d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/2284121a91ec6cf927b75bd452e0f538447c064f",
-                "reference": "2284121a91ec6cf927b75bd452e0f538447c064f",
+                "url": "https://api.github.com/repos/sminnee/silverstripe-framework/zipball/4bd0b3ca75f5f1fc76ef2d0960a1e16eb207b8d8",
+                "reference": "4bd0b3ca75f5f1fc76ef2d0960a1e16eb207b8d8",
                 "shasum": ""
             },
             "require": {
@@ -1646,11 +1646,21 @@
                     "src/Dev/PhpUnitShim.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "include-path": [
                 "src/",
                 "thirdparty/"
             ],
+            "scripts": {
+                "lint": [
+                    "phpcs src/ tests/php"
+                ],
+                "lint-clean": [
+                    "phpcbf src/ tests/php"
+                ],
+                "php-peg": [
+                    "php thirdparty/php-peg/cli.php src/View/SSTemplateParser.peg > src/View/SSTemplateParser.php"
+                ]
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1670,7 +1680,10 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2017-05-19 09:30:53"
+            "support": {
+                "source": "https://github.com/sminnee/silverstripe-framework/tree/authenticator-refactor"
+            },
+            "time": "2017-05-20 11:30:38"
         },
         {
             "name": "silverstripe/graphql",
@@ -4845,7 +4858,14 @@
             "time": "2017-04-12T14:13:17+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "4.0.x-dev",
+            "alias_normalized": "4.0.9999999.9999999-dev",
+            "version": "dev-authenticator-refactor",
+            "package": "silverstripe/framework"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/asset-admin": 20,
@@ -4863,7 +4883,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.5"
+        "php": ">=5.6"
     },
     "platform-dev": []
 }
