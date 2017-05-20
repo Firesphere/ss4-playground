@@ -9,6 +9,7 @@
 		"silverstripe/reports": "4.0.x-dev",
 		"silverstripe/siteconfig": "4.0.x-dev",
 		"silverstripe-themes/simple": "*",
+		"silverstripe/assets": "1.0.x-dev",
 		"golonka/bbcodeparser": "^2.2",
 		"firesphere/yubiauth": "dev-ss4",
 		"firesphere/silverstripe-geshiparser": "dev-master",
