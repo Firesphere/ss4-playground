@@ -1,0 +1,28 @@
+default:
+  suites:
+    cms:
+      paths:
+        - %paths.modules.cms%/tests/behat/features
+      contexts:
+        - SilverStripe\Framework\Tests\Behaviour\FeatureContext
+        - SilverStripe\Framework\Tests\Behaviour\CmsFormsContext
+        - SilverStripe\Framework\Tests\Behaviour\CmsUiContext
+        - SilverStripe\BehatExtension\Context\BasicContext
+        - SilverStripe\BehatExtension\Context\EmailContext
+        - SilverStripe\CMS\Tests\Behaviour\LoginContext
+        - SilverStripe\CMS\Tests\Behaviour\ThemeContext
+        - SilverStripe\CMS\Tests\Behaviour\FixtureContext:
+        # Note: double indent for args is intentional
+            - %paths.modules.cms%/tests/behat/features/files/
+
+  extensions:
+    SilverStripe\BehatExtension\MinkExtension:
+      base_url: http://localhost:8080
+      default_session: selenium2
+      selenium2:
+        browser: chrome
+        wd_host: http://127.0.0.1:4444/wd/hub
+
+    SilverStripe\BehatExtension\Extension:
+      screenshot_path: %paths.base%/artifacts/screenshots
+      bootstrap_file: "/cms/tests/behat/serve-bootstrap.php"

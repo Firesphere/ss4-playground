@@ -18,3 +18,12 @@ Axyr\IDEAnnotator\DataObjectAnnotator:
     enabled_modules:
        - mysite
        - yubiauth
+---
+Only:
+  environment: 'test'
+---
+SilverStripe\View\SSViewer:
+  source_file_comments: false
+Axyr\IDEAnnotator\DataObjectAnnotator:
+    enabled:
+      false
