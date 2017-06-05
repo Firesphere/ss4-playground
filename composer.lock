@@ -1344,12 +1344,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-asset-admin.git",
-                "reference": "757cdfc4c0e9351d985c65573dd054e0bcc00622"
+                "reference": "a019278cb826214d3d9ca27452f2ea71568813d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-asset-admin/zipball/757cdfc4c0e9351d985c65573dd054e0bcc00622",
-                "reference": "757cdfc4c0e9351d985c65573dd054e0bcc00622",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-asset-admin/zipball/a019278cb826214d3d9ca27452f2ea71568813d9",
+                "reference": "a019278cb826214d3d9ca27452f2ea71568813d9",
                 "shasum": ""
             },
             "require": {
@@ -1383,7 +1383,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Asset management for the SilverStripe CMS",
-            "time": "2017-05-26 03:06:00"
+            "time": "2017-05-29 05:09:21"
         },
         {
             "name": "silverstripe/assets",

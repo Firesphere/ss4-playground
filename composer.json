@@ -6,8 +6,10 @@
     "silverstripe/asset-admin": "1.0.x-dev",
     "silverstripe/cms": "dev-authenticator-refactor as 4.0.x-dev",
     "silverstripe/framework": "dev-authenticator-refactor as 4.0.x-dev",
-    "silverstripe/reports": "4.0.x-dev",
-    "silverstripe/siteconfig": "4.0.x-dev",
+    "silverstripe/reports": "dev-authenticator_refactor as 4.0.x-dev",
+    "silverstripe/siteconfig": "dev-authenticator_refactor as 4.0.x-dev",
+    "silverstripe/versioned": "dev-authenticator_refactor as 1@dev",
+    "silverstripe/asset-admin": "dev-authenticator_refactor as 1.x@dev",
     "silverstripe-themes/simple": "*",
     "silverstripe/assets": "1.0.x-dev",
     "golonka/bbcodeparser": "^2.2",
@@ -46,6 +48,18 @@
     {
       "type": "vcs",
       "url": "git@github.com:Firesphere/silverstripe-recaptcha.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:Firesphere/silverstripe-reports.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:Firesphere/silverstripe-siteconfig.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:Firesphere/silverstripe-asset-admin.git"
     },
     {
       "type": "vcs",
